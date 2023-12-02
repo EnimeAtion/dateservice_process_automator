@@ -1,0 +1,17 @@
+<constants>
+    <constant key="copp">
+        <url>https://mft.coppclark.com/</url>
+        <username>rmb-za</username>
+        <password>U=Wa4Z[T</password>
+    </constant>
+    <constant key="test">
+        <username>s_rac_datesrv</username>
+        <password>Dservice.2009</password>
+        <hostname>rmb-rbvutmles01</hostname>
+    </constant>
+    <constant key="prod">
+        <username>s_rac_datesrv</username>
+        <password>Dservice.2009</password>
+        <hostname>rmb-vpr-tngo01</hostname>
+    </constant>
+</constants>

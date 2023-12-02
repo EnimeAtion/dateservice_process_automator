@@ -1,0 +1,73 @@
+
+.root {
+    -fx-font-family: "Poppins", Sans-Serif;
+}
+
+.mainPane {
+    -fx-border-color: #D99058;
+    -fx-border-width: 5px;
+}
+
+.fileSelectBtn {
+    -fx-background-color: #55c2da;
+    -fx-color: #fff;
+    -fx-cursor: HAND;
+    -fx-border-radius: 10;
+}
+.fileSelectBtn:hover {
+    -fx-background-color: #FDA50F;
+    -fx-text-fill: #fff;
+}
+
+.fieldText {
+    -fx-border-radius: 5%;
+    -fx-background-color: #D3D3D3;
+}
+
+.fileUploadBtn {
+    -fx-background-color: #198754;
+    -fx-cursor: HAND;
+    -fx-border-radius: 10;
+}
+.fileUploadBtn:hover {
+    -fx-background-color: #000;
+    -fx-text-fill: #fff;
+}
+
+.mainPane {
+    -fx-background-color: #000000;
+
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-opacity: 0.8;
+}
+
+.loginBtn {
+    -fx-background-color: #FFA500;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16px;
+    -fx-padding: 10px;
+    -fx-margin: 10px;
+}
+
+.username, .password, .hostname {
+    -fx-background-color: #D3D3D3;
+    -fx-text-fill: #000000;
+    -fx-font-size: 12px;
+    -fx-padding: 10px;
+    -fx-margin-top: 20px;
+}
+.hostname {
+    -fx-margin-left: 20px;
+}
+
+.username:focused, .password:focused, .hostname:focused {
+    -fx-background-color: #FFA500;
+}
+
+.label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16px;
+    -fx-alignment: center;
+    -fx-margin-bottom: 5px;
+}

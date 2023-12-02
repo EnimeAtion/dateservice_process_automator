@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Main-Class: za.co.rmb.copp_clark_uat_uploader.CoppClark
+Class-Path: checker-qual-3.33.0.jar ikonli-core-12.3.1.jar junixsocket-c
+ ommon-2.5.1.jar org-openide-util-lookup-RELEASE190.jar javafx-fxml-21-w
+ in.jar bootstrapfx-core-0.4.0.jar ikonli-javafx-12.3.1.jar commons-cli-
+ 1.5.0.jar org-openide-util-ui-RELEASE190.jar javafx-media-21.jar common
+ s-io-2.13.0.jar commons-exec-1.3.jar jsch-0.1.55.jar javafx-base-20.0.2
+ .jar commons-net-3.3.jar javafx-swing-21.jar jna-platform-5.12.1.jar ja
+ vafx-web-21-win.jar org-netbeans-libs-jna-platform-RELEASE190.jar contr
+ olsfx-11.1.2.jar toolbox-17.0.33.jar j2objc-annotations-2.8.jar javafx-
+ graphics-21-win.jar org-openide-modules-RELEASE190.jar tilesfx-17.1.17.
+ jar toolboxfx-17.0.33.jar junixsocket-native-common-2.5.1.jar javafx-ba
+ se-20.0.2-win.jar javafx-controls-21.jar javafx-controls-21-win.jar bcp
+ rov-jdk15on-1.70.jar guava-32.1.2-jre.jar javafx-graphics-21.jar jsr305
+ -3.0.2.jar heatmap-17.0.12.jar com-jcraft-jzlib-RELEASE190.jar org-open
+ ide-util-RELEASE190.jar selenium-api-4.12.1.jar failureaccess-1.0.1.jar
+  selenium-os-4.12.1.jar javafx-swing-21-win.jar listenablefuture-9999.0
+ -empty-to-avoid-conflict-with-guava.jar error_prone_annotations-2.18.0.
+ jar countries-17.0.33.jar javafx-media-21-win.jar org-netbeans-libs-jna
+ -RELEASE190.jar javafx-web-21.jar javafx-fxml-21.jar com-jcraft-jsch-RE
+ LEASE190.jar jna-5.12.1.jar libs-c-kohlschutter-junixsocket-RELEASE190.
+ jar
+
