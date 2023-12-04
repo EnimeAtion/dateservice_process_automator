@@ -51,9 +51,18 @@ public class FileManager implements Variables {
 
         logger.info("Logged in to " + driver.getTitle());
 
-        WebElement newFilesTable = driver.findElement(By.id("newFilesTable"));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("newFilesTable")));
+
+        WebElement newFilesTable = null;
+        if (driver.findElement(By.id("newFilesTable")).isDisplayed()) {
+            newFilesTable = driver.findElement(By.id("newFilesTable"));
+        }
+        else {
+            throw new Exception("The no new files found . . . ");
+        }
 
         logger.info("Accessing the newFilesTable");
+        assert newFilesTable != null;
         for (WebElement row : newFilesTable.findElements(By.cssSelector(rowCss))) {
             if(row.findElement(By.cssSelector(filenameCss)).getText().trim().matches(fileRegex) ) {
                 String filename = row.findElement(By.cssSelector(filenameCss)).getText().trim();
@@ -157,7 +166,15 @@ public class FileManager implements Variables {
                     Files.move(file, targetFile, StandardCopyOption.REPLACE_EXISTING);
                     logger.info("Moved file: " + filename + " to " + targetFile);
                 } else {
-                    logger.error("Files not found!!");
+                    logger.error("This is not dateservice file - " + filename);
+                }
+
+                if (filename.equals("copp_clark_uat_uploader-0.0.1-Beta-jar-with-dependencies.jar")) {
+                    System.out.println("Jar file found!!! - " +filename);
+
+                    ProcessBuilder processBuilder = new ProcessBuilder();
+                    processBuilder.command("shell", "java -jar "+ filename);
+                    processBuilder.start();
                 }
             }
         } catch (IOException e) {
