@@ -19,11 +19,11 @@ public class Utilities {
     }
 
     public static Path getXMLFilePath() {
-        return Paths.get(System.getProperty("user.dir") + "\\src\\main\\resources\\constants\\Constants.xml");
+        return Paths.get("src/main/resources/constants/Constants.xml");
     }
 
     public static Path getPathToSaveFiles() {
-        return Paths.get(System.getProperty("user.home") +"\\Documents\\dateservice");
+        return Paths.get("/tmp/Copp_Clark/");
     }
     public static Path getChromePath() {
         return Paths.get("\\src\\main\\resources\\browser\\firefox_win\\core\\firefox.exe");

@@ -11,10 +11,13 @@ import org.w3c.dom.NodeList;
 import za.co.rmb.copp_clark_uat_uploader.file_manager.FileManager;
 import za.co.rmb.copp_clark_uat_uploader.utilities.Utilities;
 
+import java.io.File;
+
 
 public class ConstantsReader {
     public static Document document;
     private static final Logger LOGGER = LogManager.getLogger(FileManager.class);
+    private static final File constantsFile = new File(String.valueOf(Utilities.getXMLFilePath()));
 
     /**
      * @throws Exception
@@ -22,7 +25,7 @@ public class ConstantsReader {
     public ConstantsReader() throws Exception {
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-        document = dBuilder.parse(Utilities.getXMLFilePath().toString());
+        document = dBuilder.parse(constantsFile);
     }
 
     private String getValue(String key, String elementName) {
